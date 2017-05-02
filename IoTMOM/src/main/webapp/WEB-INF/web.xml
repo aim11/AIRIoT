@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+    <!-- Load Web service contexts -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:serviceContext.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+        <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+    </listener>
+
+    <!--servlet>
+        <servlet-name>Jersey Spring Web Application</servlet-name>
+        <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Spring Web Application</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping-->
+
+    <!--context-param>
+        <param-name>org.apache.activemq.brokerURL</param-name>
+        <param-value>tcp://localhost:61616</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>MessageServlet</servlet-name>
+        <servlet-class>org.apache.activemq.web.MessageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <init-param>
+            <param-name>defaultContentType</param-name>
+            <param-value>application/rdf+xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>org.apache.activemq.brokerURL</param-name>
+            <param-value>tcp://localhost:61616</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageServlet</servlet-name>
+        <url-pattern>/amq-rest/*</url-pattern>
+    </servlet-mapping-->
+
+</web-app>

@@ -1,0 +1,584 @@
+<rdf:RDF xmlns="http://localhost/SensorSchema/ontology#"
+     xml:base="http://localhost/SensorSchema/ontology"
+     xmlns:obs="http://localhost/SensorSchema/ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://localhost/SensorSchema/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasArea -->
+
+    <owl:AnnotationProperty rdf:about="obs:hasArea"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasDistance -->
+
+    <owl:AnnotationProperty rdf:about="obs:hasDistance"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="obs:hasObservation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#dateTime -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasDateTime">
+        <rdfs:range rdf:resource="xsd:dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasAcceleration -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasAcceleration">
+        <rdfs:range rdf:resource="xsd:double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasDate">
+        <rdfs:range rdf:resource="xsd:integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasDirection -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasDirection">
+        <rdfs:range rdf:resource="xsd:int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasDuration">
+        <rdfs:range rdf:resource="xsd:long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasEndLatitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasEndLatitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasEndLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasEndLocation -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasEndLocation"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasEndLongitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasEndLongitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasEndLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasID">
+        <rdfs:range rdf:resource="xsd:integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasLatitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasLocation"/>
+        <rdfs:range rdf:resource="xsd:double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasLocation"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasLongitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasLocation"/>
+        <rdfs:range rdf:resource="xsd:double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasSender -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasSender">
+        <rdfs:range rdf:resource="xsd:int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasStartLatitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasStartLatitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasStartLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasStartLocation -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasStartLocation"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasStartLongitude -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasStartLongitude">
+        <rdfs:subPropertyOf rdf:resource="obs:hasStartLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#hasVelocity -->
+
+    <owl:DatatypeProperty rdf:about="obs:hasVelocity">
+        <rdfs:range rdf:resource="xsd:double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrlb#args -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/11/swrlb#args"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrlb#maxArgs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/11/swrlb#maxArgs"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrlb#minArgs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/11/swrlb#minArgs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Byway -->
+
+    <owl:Class rdf:about="obs:Byway">
+        <rdfs:label xml:lang="en">Byway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="obs:Road"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Crossing -->
+
+    <owl:Class rdf:about="obs:Crossing">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Event -->
+
+    <owl:Class rdf:about="obs:Event"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAcceleration -->
+
+    <owl:Class rdf:about="obs:HighAcceleration">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+        <rdfs:comment rdf:datatype="xsd:string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAvgSpeed -->
+
+    <owl:Class rdf:about="obs:HighAvgSpeed">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAvgSpeed1 -->
+
+    <owl:Class rdf:about="obs:HighAvgSpeed1">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAvgSpeed2 -->
+
+    <owl:Class rdf:about="obs:HighAvgSpeed2">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAvgSpeed3 -->
+
+    <owl:Class rdf:about="obs:HighAvgSpeed3">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighAvgSpeed4 -->
+
+    <owl:Class rdf:about="obs:HighAvgSpeed4">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighDeacceleration -->
+
+    <owl:Class rdf:about="obs:HighDeacceleration">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HighSpeed -->
+
+    <owl:Class rdf:about="obs:HighSpeed">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Highway -->
+
+    <owl:Class rdf:about="obs:Highway">
+        <rdfs:label xml:lang="en">Highway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="obs:Road"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#HotSpot -->
+
+    <owl:Class rdf:about="obs:HotSpot">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Jam -->
+
+    <owl:Class rdf:about="obs:Jam">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="obs:hasObservation"/>
+                <owl:allValuesFrom rdf:resource="obs:Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamSpeed1 -->
+
+    <owl:Class rdf:about="obs:JamSpeed1">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="obs:hasObservation"/>
+                <owl:allValuesFrom rdf:resource="obs:Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamSpeed2 -->
+
+    <owl:Class rdf:about="obs:JamSpeed2">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamSpeed3 -->
+
+    <owl:Class rdf:about="obs:JamSpeed3">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamSpeed4 -->
+
+    <owl:Class rdf:about="obs:JamSpeed4">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamSpeed5 -->
+
+    <owl:Class rdf:about="obs:JamSpeed5">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#JamZone -->
+
+    <owl:Class rdf:about="obs:JamZone">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#LeftTurn -->
+
+    <owl:Class rdf:about="obs:LeftTurn">
+        <rdfs:subClassOf rdf:resource="obs:Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#LongStop -->
+
+    <owl:Class rdf:about="obs:LongStop">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#LowAvgSpeed -->
+
+    <owl:Class rdf:about="obs:LowAvgSpeed">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#LowSpeed -->
+
+    <owl:Class rdf:about="obs:LowSpeed">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#MidAvgSpeed -->
+
+    <owl:Class rdf:about="obs:MidAvgSpeed">
+        <rdfs:subClassOf rdf:resource="obs:Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Motorway -->
+
+    <owl:Class rdf:about="obs:Motorway">
+        <rdfs:subClassOf rdf:resource="obs:Road"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Observation -->
+
+    <owl:Class rdf:about="obs:Observation"/>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#RightTurn -->
+
+    <owl:Class rdf:about="obs:RightTurn">
+        <rdfs:subClassOf rdf:resource="obs:Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Road -->
+
+    <owl:Class rdf:about="obs:Road">
+        <rdfs:label xml:lang="en">Road</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#SlowTrafficFlow -->
+
+    <owl:Class rdf:about="obs:SlowTrafficFlow">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Speed -->
+
+    <owl:Class rdf:about="obs:Speed">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Stop -->
+
+    <owl:Class rdf:about="obs:Stop">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Stop1 -->
+
+    <owl:Class rdf:about="obs:Stop1">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Stop2 -->
+
+    <owl:Class rdf:about="obs:Stop2">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Stop3 -->
+
+    <owl:Class rdf:about="obs:Stop3">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Stop4 -->
+
+    <owl:Class rdf:about="obs:Stop4">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#StopOnMotorway -->
+
+    <owl:Class rdf:about="obs:StopOnMotorway">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#TrafficJam -->
+
+    <owl:Class rdf:about="obs:TrafficJam">
+        <rdfs:subClassOf rdf:resource="obs:Jam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#Turn -->
+
+    <owl:Class rdf:about="obs:Turn">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#UTurn -->
+
+    <owl:Class rdf:about="obs:UTurn">
+        <rdfs:subClassOf rdf:resource="obs:Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#UTurnZone -->
+
+    <owl:Class rdf:about="obs:UTurnZone">
+        <rdfs:subClassOf rdf:resource="obs:Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/SensorSchema/ontology#VeryLongStop -->
+
+    <owl:Class rdf:about="obs:VeryLongStop">
+        <rdfs:subClassOf rdf:resource="obs:Stop"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="obs:hasVelocity"/>
+                <owl:allValuesFrom rdf:resource="xsd:anyURI"/>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+</rdf:RDF>
+
+

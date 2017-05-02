@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>IoT</artifactId>
+        <groupId>aim.iot</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>aim.iotreasoner</groupId>
+    <artifactId>IoTReasoner</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <jena.version>2.12.0</jena.version>
+    </properties>
+
+<dependencies>
+
+    <!--dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-arq</artifactId>
+        <version>${jena.version}</version>
+    </dependency-->
+
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-core</artifactId>
+        <version>${jena.version}</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>com.hp.hpl.jena</groupId>
+        <artifactId>jena</artifactId>
+        <version>2.6.4</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>com.hp.hpl.jena</groupId>
+        <artifactId>arq</artifactId>
+        <version>2.8.8</version>
+    </dependency>
+    <dependency>
+        <groupId>com.hp.hpl.jena</groupId>
+        <artifactId>arq-extra</artifactId>
+        <version>2.7.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-repository-sail</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-sail-memory</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-model</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-sail-api</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-sail-nativerdf</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-repository-http</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openrdf.sesame</groupId>
+        <artifactId>sesame-repository-manager</artifactId>
+        <version>2.7.9</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.jsonld-java</groupId>
+        <artifactId>jsonld-java-jena</artifactId>
+        <version>0.3</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1</version>
+    </dependency>
+
+</dependencies>
+
+</project>
