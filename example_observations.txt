@@ -1,0 +1,94 @@
+## RDF/XML ##
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:obs="http://localhost/SensorSchema/ontology#" > 
+  <rdf:Description rdf:ID="uuid:bfa80e70-bada-483b-a625-dc9831e1d704">
+    <obs:hasID>1</obs:hasID>
+    <obs:hasLatitude>65.0583533</obs:hasLatitude>
+    <obs:hasLongitude>25.4719082</obs:hasLongitude>       
+    <obs:hasVelocity>2.0</obs:hasVelocity>
+    <obs:hasSender>1234</obs:hasSender>
+    <obs:hasDate>1420434390000</obs:hasDate>
+    <obs:hasDirection>167</obs:hasDirection>    
+  </rdf:Description>
+</rdf:RDF>
+
+
+## N3 ##
+
+@prefix obs:   <http://localhost/SensorSchema/ontology#>.
+obs:Observation 1234 1 bfa80e70-bada-483b-a625-dc9831e1d704
+        a                    obs:Observation ;
+        obs:hasDate      "1420434390000" ;
+        obs:hasDirection     "167";
+        obs:hasID            "1";
+        obs:hasLatitude      "65.0583533";
+        obs:hasLongitude     "25.4719082";
+        obs:hasSender        "1234";
+        obs:hasVelocity      "2.0" .
+
+ 
+ 
+## Context referenced JSON-LD ##
+
+{"@id" : "uuid:bfa80e70-bada-483b-a625-dc9831e1d704",
+    "obs:hasDate" :"1420434390000",
+    "obs:hasDirection" : 167,
+    "obs:hasID" :  1,
+    "obs:hasLatitude" : 65.0583533,
+    "obs:hasLongitude" : 25.4719082,
+    "obs:hasSender" : 1234,
+    "obs:hasVelocity" : 2.0,    
+  },
+
+"@context" : {
+    "hasDate" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasDate",
+      "@type" : "@id"
+    },
+    "hasLatitude" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasLatitude",
+      "@type" : "@id"
+    },
+    "hasSender" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasSender",
+      "@type" : "@id"
+    },
+    "hasID" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasID",
+      "@type" : "@id"
+    },
+    "hasDirection" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasDirection",
+      "@type" : "@id"
+    },
+    "hasVelocity" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasVelocity",
+      "@type" : "@id"
+    },
+    "hasLongitude" : {
+      "@id" : "http://localhost/SensorSchema/ontology#hasLongitude",
+      "@type" : "@id"
+    },
+    "obs" : "http://localhost/SensorSchema/ontology#"
+  }
+  
+  
+## Entity Notation short packet ##
+
+[urn:uuid:bfa80e70-bada-483b-a625-dc9831e1d704 1 65.0583533 
+25.4719082 2.0 167 1234  91369 1420434390000]
+
+## EN template part ##
+
+[http://localhost/SensorSchema/ontology#Observation 
+http://localhost/SensorSchema/ontology#bfa80e70-bada-483b-a625-dc9831e1d704 
+http://localhost/SensorSchema/ontology#hasID ?1
+http://localhost/SensorSchema/ontology#hasLatitude ?2 
+http://localhost/SensorSchema/ontology#hasLongitude ?3
+http://localhost/SensorSchema/ontology#hasVelocity ?4
+http://localhost/SensorSchema/ontology#hasDirection ?5
+http://localhost/SensorSchema/ontology#hasSender ?6
+http://localhost/SensorSchema/ontology#hasDate ?8]
+
