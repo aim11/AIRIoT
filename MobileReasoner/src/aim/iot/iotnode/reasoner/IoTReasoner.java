@@ -65,10 +65,10 @@ import java.util.*;
 */
 public class IoTReasoner {
 
-    private String ontology = "android.resource://aim.iot.iotnode/raw/ontology.owl";
+    private String ontology = "android.resource://aim.iot.iotnode/raw/traffic.owl";
     private String graphURI = "http://localhost/SensorSchema/ontology#";
     private String prefix = "obs";
-    private String rulesFile = "./res/rules_jena.txt";
+    private String rulesFile = "./res/traffic.rules";
 
     Logger logger = LoggerFactory.getLogger(IoTReasoner.class);
 

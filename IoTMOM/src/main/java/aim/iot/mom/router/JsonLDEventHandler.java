@@ -20,8 +20,8 @@ public class JsonLDEventHandler implements Processor{
         private static final Logger LOGGER = LoggerFactory
         .getLogger(JsonLDEventHandler.class);
 
-        private String owlFile = "./ontology.owl";
-        private String ruleFile = "./rules_jena.txt";
+        private String owlFile = "./traffic.owl";
+        private String ruleFile = "./traffic.rules";
 
         String jsonHeader = "{\"@graph\" : [";
 

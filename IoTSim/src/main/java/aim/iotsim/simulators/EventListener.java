@@ -17,8 +17,8 @@ import java.io.UnsupportedEncodingException;
  */
 public class EventListener implements MessageListener {
 
-    private String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/ontology.owl";
-    private String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/rules_jena.txt";
+    private String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl";
+    private String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules";
 
 
     @Override

@@ -23,8 +23,8 @@ public class JMSEventHandler implements Processor{
         private static final Logger LOGGER = LoggerFactory
         .getLogger(JMSEventHandler.class);
 
-    private String owlFile = "./ontology.owl";
-    private String ruleFile = ".rules_jena.txt";
+    private String owlFile = "./traffic.owl";
+    private String ruleFile = ".traffic.rules";
 
     private long storageLatency=0;
     int count = 0;

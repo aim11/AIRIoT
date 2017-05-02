@@ -72,7 +72,7 @@ public class QueryEngine {
         //new ObservationDAOWrapper(model, graphURI, "LeftTurn");
         //List<Observation> obs = ObservationDAOWrapper.queryAll();
 
-        /*IoTReasoner ioTReasoner = new IoTReasoner("/home/amaarala/thesis/dev/IoT/IoTSim/ontology.owl", "http://localhost/SensorSchema/ontology#", "obs", "file:/home/amaarala/thesis/dev/IoT/IoTSim/rules_jena.txt");
+        /*IoTReasoner ioTReasoner = new IoTReasoner("/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl", "http://localhost/SensorSchema/ontology#", "obs", "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules");
 
         String[] classes = {"JamZone", "Crossing", "HotSpot", "HighPollutionZone", "UTurnZone"};
 

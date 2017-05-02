@@ -43,7 +43,7 @@ public class XML2RDFEN extends DefaultHandler{
             throws IOException, SAXException, ParserConfigurationException{
 
         ioTReasoner = new IoTReasoner();
-        //ioTReasoner.setRulesFile("file:./IoTSim/rules_jena.txt");
+        //ioTReasoner.setRulesFile("file:./IoTSim/traffic.rules");
 
         //ioTReasoner.initializeGenericReasoner();
 

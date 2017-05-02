@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="ontology" type="id">ontology.owl</item>
-    <item name="rules" type="id">rules_jena.txt</item>
+    <item name="ontology" type="id">traffic.owl</item>
+    <item name="rules" type="id">traffic.rules</item>
     <item name="data" type="id">data.rdf</item>
 
 </resources>

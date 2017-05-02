@@ -29,8 +29,8 @@ public class RDFXMLEventHandler implements Processor{
     private long storageLatency = 0;
     private int count = 0;
 
-    private String owlFile = "./ontology.owl";
-    private String ruleFile = "./rules_jena.txt";
+    private String owlFile = "./traffic.owl";
+    private String ruleFile = "./traffic.rules";
 
 
         public void process(Exchange exchange) throws Exception {

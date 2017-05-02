@@ -19,8 +19,8 @@ import java.util.Date;
  */
 public class SensorSimulationParallel {
 
-    private static String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/ontology.owl";
-    private static String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/rules_jena.txt";
+    private static String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl";
+    private static String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules";
 
     static long reasoningLatency = 0;
 

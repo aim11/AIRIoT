@@ -50,10 +50,10 @@ import java.io.UnsupportedEncodingException;
  */
 public class IoTReasoner {
 
-    private String ontology = "./ontology.owl";
+    private String ontology = "./traffic.owl";
     private String graphURI = "http://localhost/SensorSchema/ontology#";
     private String prefix = "obs";
-    private String rulesFile = "./rules_jena.txt";
+    private String rulesFile = "./traffic.rules";
 
 
     private InfModel rulesmodel = null;

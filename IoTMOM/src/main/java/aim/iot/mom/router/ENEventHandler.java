@@ -26,8 +26,8 @@ public class ENEventHandler implements Processor{
         private static final Logger LOGGER = LoggerFactory
         .getLogger(ENEventHandler.class);
 
-        private String owlFile = "./ontology.owl";
-        private String ruleFile = "./rules_jena.txt";
+        private String owlFile = "./traffic.owl";
+        private String ruleFile = "./traffic.rules";
 
     private String ontologyURI = "http://localhost/SensorSchema/ontology#";
     static long tt = 0;
