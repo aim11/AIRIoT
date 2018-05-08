@@ -1,7 +1,7 @@
-# AIoT 
-Commonsense distributed reasoning framework for IoT applications
+# AIRIoT 
+Distributed commonsense AI reasoning framework for IoT applications
 
-AIoT is powered by Jena rule based reasoner https://jena.apache.org/documentation/inference/ and 
+AIRIoT is powered by Jena rule based reasoner https://jena.apache.org/documentation/inference/ and 
 ActiveMQ messaging service http://activemq.apache.org/ backed by RDF4J graph database with SPARQL query support.
 Android mobile reasoners support MQTT and COAP protocols.
 
