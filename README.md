@@ -1,9 +1,9 @@
 # AIoT 
-Common sense reasoning framework for IoT applications
+Commonsense distributed reasoning framework for IoT applications
 
 AIoT is powered by Jena rule based reasoner https://jena.apache.org/documentation/inference/ and 
 ActiveMQ messaging service http://activemq.apache.org/ backed by RDF4J graph database.
-Mobile reasoners support MQTT and COAP protocols.
+Android mobile reasoners support MQTT and COAP protocols.
 
 This framework is based on the paper:
 Semantic Reasoning for Context-aware Internet of Things Applications. Maarala AI, Su X, Riekki J
