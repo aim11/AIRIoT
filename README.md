@@ -1,4 +1,5 @@
-AIoT - Context-aware reasoning framework for IoT applications
+# AIoT 
+Common sense reasoning framework for IoT applications
 
 This framework is based on the paper:
 Semantic Reasoning for Context-aware Internet of Things Applications. Maarala AI, Su X, Riekki J
