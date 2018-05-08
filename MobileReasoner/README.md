@@ -1,7 +1,5 @@
 This is Android version of IoT reasoner.
 
-TODO: Integrate with Maven
-
 Library dependencies:
 android-support-v4.jar
 androjena_0.5.jar
