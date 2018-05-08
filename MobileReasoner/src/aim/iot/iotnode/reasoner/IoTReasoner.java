@@ -66,9 +66,9 @@ import java.util.*;
 public class IoTReasoner {
 
     private String ontology = "android.resource://aim.iot.iotnode/raw/traffic.owl";
-    private String graphURI = "http://localhost/SensorSchema/ontology#";
+    private String graphURI = "http://localhost/Schema/ontology#";
     private String prefix = "obs";
-    private String rulesFile = "./res/traffic.rules";
+    private String rulesFile = "./traffic.rules";
 
     Logger logger = LoggerFactory.getLogger(IoTReasoner.class);
 
@@ -243,7 +243,7 @@ public class IoTReasoner {
         }     */
         // creates a new, empty in-memory model
 
-        //Resource ENTITY_TYPE = rulesmodel.getResource("http://localhost/SensorSchema/ontology#Jam");
+        //Resource ENTITY_TYPE = rulesmodel.getResource("http://localhost/Schema/ontology#Jam");
         /*StmtIterator it = rulesmodel.getDeductionsModel().listStatements(null, RDF.type, ENTITY_TYPE);
 
         while (it.hasNext()) {
@@ -425,7 +425,7 @@ public class IoTReasoner {
         //Deductions model not created from backward rules
         //to get only deducted triples strictly from the model,
 
-        rulesmodel.getDeductionsModel().setNsPrefix("obs", "http://localhost/SensorSchema/ontology#");
+        rulesmodel.getDeductionsModel().setNsPrefix("obs", graphURI);
         //this.deductionsModel = rulesmodel.getDeductionsModel();
 
 
@@ -449,7 +449,7 @@ public class IoTReasoner {
 
         //Deductions model not created from backward rules
         //to get only deducted triples strictly from the model,
-        infModel.getDeductionsModel().setNsPrefix("obs", "http://localhost/SensorSchema/ontology#");
+        infModel.getDeductionsModel().setNsPrefix("obs", graphURI);
 
         //updateSesameRepository(rulesmodel.getDeductionsModel());
 

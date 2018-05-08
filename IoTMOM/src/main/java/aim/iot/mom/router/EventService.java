@@ -68,15 +68,15 @@ public class EventService {
 
                     //CorrelationID can be any field such as TYPE, from active mq rest it should be expressed as query param
 
-                    //from("activemq:queue:gps").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyRDFXML()).completionSize(2).process(new RDFXMLEventHandler());
+                    from("activemq:queue:gps").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyRDFXML()).completionSize(2).process(new RDFXMLEventHandler());
                     from("activemq:queue:rdf").process(new RDFXMLEventHandler());
                     from("activemq:queue:en").process(new ENEventHandler());
                     from("activemq:queue:jsonld").process(new JsonLDEventHandler());
 
-                    //from("activemq:en.events").aggregate(header("JMSCorrelationID"), new StringAggregationStrategy()).completionSize(100).process(new ENEventHandler());
-                    //from("activemq:json.events").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyJSONLD()).completionSize(100).process(new JsonLDEventHandler());
-                    //from("activemq:rdfxml.queue").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyRDFXML()).completionSize(100).process(new RDFXMLEventHandler());
-                    //from("activemq:n3.queue").aggregate(header("JMSCorrelationID"), new StringAggregationStrategy()).completionSize(100).process(new JMSEventHandler());
+                    from("activemq:en.events").aggregate(header("JMSCorrelationID"), new StringAggregationStrategy()).completionSize(100).process(new ENEventHandler());
+                    from("activemq:json.events").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyJSONLD()).completionSize(100).process(new JsonLDEventHandler());
+                    from("activemq:rdfxml.queue").aggregate(header("JMSCorrelationID"), new StringAggregationStrategyRDFXML()).completionSize(100).process(new RDFXMLEventHandler());
+                    from("activemq:n3.queue").aggregate(header("JMSCorrelationID"), new StringAggregationStrategy()).completionSize(100).process(new JMSEventHandler());
 
                     //MULTIPLE QUEUES
                     //for(int i=0; i<=100; i++)

@@ -8,7 +8,11 @@ import org.apache.camel.Processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
+import java.util.Properties;
 
 
 /**
@@ -28,6 +32,8 @@ public class JMSEventHandler implements Processor{
 
     private long storageLatency=0;
     int count = 0;
+    private String ontologyURI = "http://localhost/Schema/ontology#";
+    private String predictClasses;
 
     public void process(Exchange exchange) throws Exception {
             try {
@@ -36,8 +42,22 @@ public class JMSEventHandler implements Processor{
                 Message message = (Message) exchange.getIn();
 
                 //exchange.getIn().setBody(message.getBody());
+                Properties prop = new Properties();
+                InputStream input = null;
+
+                try {
+                    input = new FileInputStream("config.properties");
+                    prop.load(input);
+                    owlFile = prop.getProperty("owlfile");
+                    ruleFile = prop.getProperty("rulesfile");
+                    ontologyURI = prop.getProperty("ontologyuri");
+                    predictClasses = prop.getProperty("predict_classnames");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
                 Date startd = new Date();
-                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, "http://localhost/SensorSchema/ontology#", "obs", ruleFile);
+                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, ontologyURI, "obs", ruleFile);
 
                 //String[] splitted = message.getBody().toString().split("#&&##");
                 //LOGGER.info("{}",message.getHeader("JMSCorrelationID"));
@@ -46,8 +66,8 @@ public class JMSEventHandler implements Processor{
 
                 //Store instances
                 //ioTReasoner.updateSesameRepository(ioTReasoner.getDataModel());
-                String[] types = {""};
-                Model model = ioTReasoner.inferModel(types, false);
+                String[] classes = predictClasses.split(",");
+                Model model = ioTReasoner.inferModel(classes, false);
                 Date endd = new Date();
                 reasoningLatency = reasoningLatency+(endd.getTime()-startd.getTime());
 

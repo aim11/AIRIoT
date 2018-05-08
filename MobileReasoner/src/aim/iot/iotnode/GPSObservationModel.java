@@ -15,7 +15,7 @@ import java.util.UUID;
  */
 public class GPSObservationModel{
 
-    String ontologyURI =  "http://localhost/SensorSchema/ontology#";
+    String ontologyURI =  "http://localhost/Schema/ontology#";
 
     public SimpleDateFormat getSf() {
         return sf;
@@ -27,7 +27,7 @@ public class GPSObservationModel{
         return graphIRI;
     }
 
-    private String graphIRI = "http://localhost/SensorSchema";
+    private String graphIRI = "http://localhost/Schema";
     private Model dataModel;
 
     public Resource getObsType() {

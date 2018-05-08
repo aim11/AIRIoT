@@ -1,9 +1,9 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:obs="http://localhost/SensorSchema/ontology#" > 
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_70_d6a9b8bd-9254-4f99-be4e-e6d61f70b8ca">
+    xmlns:obs="http://localhost/Schema/ontology#" >
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_70_d6a9b8bd-9254-4f99-be4e-e6d61f70b8ca">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasDateTime>2013-04-07T02:11:45</obs:hasDateTime>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.04178499999999</obs:hasLatitude>
@@ -15,7 +15,7 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</obs:hasID>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90486</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_13_a16f3ba9-0a9b-47fb-9548-99de9080fbfd">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_13_a16f3ba9-0a9b-47fb-9548-99de9080fbfd">
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</obs:hasID>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289252620</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:00:52</obs:hasDateTime>
@@ -26,10 +26,10 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.507485065468444</obs:hasDistance>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_43_2c34ef3f-50f0-4a44-8b28-57ad810ffac2">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_43_2c34ef3f-50f0-4a44-8b28-57ad810ffac2">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</obs:hasID>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">59.266852716431316</obs:hasDistance>
@@ -40,10 +40,10 @@
     <obs:hasDateTime>2013-04-07T02:05:06</obs:hasDateTime>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.509405</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91883</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_24_8c3c13e2-4098-4322-afba-8174e30a7a6f">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_24_8c3c13e2-4098-4322-afba-8174e30a7a6f">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01480333333333</obs:hasLatitude>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.488735</obs:hasLongitude>
@@ -53,14 +53,14 @@
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3264606025848635</obs:hasAcceleration>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">227.37320973495633</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91827</obs:hasArea>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289331088</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_33_ddf95295-8a42-4d7c-b5a1-d068e511d1f5">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_33_ddf95295-8a42-4d7c-b5a1-d068e511d1f5">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02414833333334</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289421629</obs:hasDate>
@@ -71,13 +71,13 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.495656666666665</obs:hasLongitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90326</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_16_71aa9a4b-95fd-4347-b3d2-d001b39b7561">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_16_71aa9a4b-95fd-4347-b3d2-d001b39b7561">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.557279308867035</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.478423333333332</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.961115660306184</obs:hasDistance>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289264860</obs:hasDate>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01347000000001</obs:hasLatitude>
@@ -85,7 +85,7 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90866</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_36_731c7a32-382e-4ec4-be3e-fc1f588655d6">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_36_731c7a32-382e-4ec4-be3e-fc1f588655d6">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02658166666667</obs:hasLatitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDateTime>2013-04-07T02:04:05</obs:hasDateTime>
@@ -96,15 +96,15 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.49397333333333</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</obs:hasDirection>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</obs:hasID>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">47.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_38_c913821d-0ce8-417a-8ae9-f86f84124960">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_38_c913821d-0ce8-417a-8ae9-f86f84124960">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02656</obs:hasLatitude>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.498679999999997</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90146</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</obs:hasID>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</obs:hasDirection>
@@ -113,10 +113,10 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289464720</obs:hasDate>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_49_b6c12c24-3e94-40a8-8f49-edd30ccbf5f6">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_49_b6c12c24-3e94-40a8-8f49-edd30ccbf5f6">
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289598897</obs:hasDate>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90916</obs:hasArea>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02864500000001</obs:hasLatitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -127,8 +127,8 @@
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">49</obs:hasID>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_14_7935bc80-d9de-4b16-8e49-531289a833f3">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_14_7935bc80-d9de-4b16-8e49-531289a833f3">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.012915</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.48896897026817</obs:hasDistance>
@@ -141,7 +141,7 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289257298</obs:hasDate>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_7_e0cbe2b1-27b0-4ba7-8a96-17d750aded4c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_7_e0cbe2b1-27b0-4ba7-8a96-17d750aded4c">
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">209</obs:hasDirection>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.47703166666667</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
@@ -152,13 +152,13 @@
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDateTime>2013-04-07T02:00:25</obs:hasDateTime>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01286166666667</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.59091994897737</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_71_7cb9684a-894a-44b3-a161-70c5b5ce4037">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_71_7cb9684a-894a-44b3-a161-70c5b5ce4037">
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289924075</obs:hasDate>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.583308333333335</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">209.00833254454773</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91285</obs:hasArea>
@@ -169,11 +169,11 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_3_4697fc6e-a1ca-4072-9c24-c7fed45883c3">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_3_4697fc6e-a1ca-4072-9c24-c7fed45883c3">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289207370</obs:hasDate>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01392000000001</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:00:07</obs:hasDateTime>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90856</obs:hasArea>
@@ -183,7 +183,7 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">56.89674455882506</obs:hasDistance>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_44_07fd6e58-91ec-42a3-9548-b0f7e23b4708">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_44_07fd6e58-91ec-42a3-9548-b0f7e23b4708">
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.51157</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -192,17 +192,17 @@
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02713833333334</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91883</obs:hasArea>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289515489</obs:hasDate>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">103.96286414847054</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_37_fb66d81e-ec0d-46c6-ba69-1d5032511464">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_37_fb66d81e-ec0d-46c6-ba69-1d5032511464">
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135.58861196166208</obs:hasDistance>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.496853333333334</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">101</obs:hasDirection>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02667333333333</obs:hasLatitude>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.17328424585549798</obs:hasAcceleration>
@@ -211,35 +211,35 @@
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90146</obs:hasArea>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_20_f32fb7b2-dafc-4d45-9653-083aaf80794a">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_20_f32fb7b2-dafc-4d45-9653-083aaf80794a">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</obs:hasID>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289276617</obs:hasDate>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.014025</obs:hasLatitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</obs:hasDirection>
     <obs:hasDateTime>2013-04-07T02:01:16</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91677</obs:hasArea>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.48083</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.269564080918025</obs:hasDistance>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.090283938821876</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_6_d06a0e51-8cda-49b8-aabe-abf102b31073">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_6_d06a0e51-8cda-49b8-aabe-abf102b31073">
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</obs:hasID>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289219327</obs:hasDate>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.477615</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">211</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01329666666668</obs:hasLatitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.229785876256776</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.764318384131284</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92003</obs:hasArea>
     <obs:hasDateTime>2013-04-07T02:00:19</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_5_a0fb1f9a-0cbd-4f0e-8597-58242922e169">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_5_a0fb1f9a-0cbd-4f0e-8597-58242922e169">
     <obs:hasDateTime>2013-04-07T02:00:18</obs:hasDateTime>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90866</obs:hasArea>
@@ -249,16 +249,16 @@
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.47774666666667</obs:hasLongitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">213</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6237548987527658</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_15_ae1a851c-d929-4138-a47d-904a79e2d9bc">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_15_ae1a851c-d929-4138-a47d-904a79e2d9bc">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:01:02</obs:hasDateTime>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.47809666666667</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92003</obs:hasArea>
@@ -267,7 +267,7 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">49.29793585855602</obs:hasDistance>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_73_27c1838f-64da-4e9d-92c5-c32864a40b57">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_73_27c1838f-64da-4e9d-92c5-c32864a40b57">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.590411666666668</obs:hasLongitude>
@@ -277,16 +277,16 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289957045</obs:hasDate>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">254.71255443746958</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90099</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">109</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.04426</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_32_e70aeb67-f19a-4b57-b340-7ffb90a14aaf">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_32_e70aeb67-f19a-4b57-b340-7ffb90a14aaf">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</obs:hasID>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">356</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02322166666666</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">237.03083521996672</obs:hasDistance>
     <obs:hasDateTime>2013-04-07T02:03:33</obs:hasDateTime>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
@@ -295,13 +295,13 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289413903</obs:hasDate>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90326</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_22_52cdc17d-42fe-4240-a521-c20fb5c25266">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_22_52cdc17d-42fe-4240-a521-c20fb5c25266">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.11503727837713482</obs:hasAcceleration>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.48491166666667</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">122</obs:hasDirection>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90589</obs:hasArea>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">166.34436018558745</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01333333333334</obs:hasLatitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</obs:hasID>
@@ -309,9 +309,9 @@
     <obs:hasDateTime>2013-04-07T02:01:41</obs:hasDateTime>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_58_3a14c36b-da82-4dcb-9994-8f1c001e77c7">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_58_3a14c36b-da82-4dcb-9994-8f1c001e77c7">
     <obs:hasDateTime>2013-04-07T02:08:10</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">80.63220985481553</obs:hasDistance>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6100516766610372</obs:hasAcceleration>
@@ -323,7 +323,7 @@
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02641833333334</obs:hasLatitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91553</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_39_63e9864c-8b4d-492c-97f6-90da7ace48a0">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_39_63e9864c-8b4d-492c-97f6-90da7ace48a0">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.50288833333333</obs:hasLongitude>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02661833333333</obs:hasLatitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</obs:hasDirection>
@@ -334,14 +334,14 @@
     <obs:hasDateTime>2013-04-07T02:04:40</obs:hasDateTime>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17565588455124742</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_56_2d61dc87-82c2-48cc-b3c3-92f6da85e479">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_56_2d61dc87-82c2-48cc-b3c3-92f6da85e479">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.54536666666667</obs:hasLongitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90735</obs:hasArea>
     <obs:hasDateTime>2013-04-07T02:07:55</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.4598800135224761</obs:hasAcceleration>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02513</obs:hasLatitude>
@@ -351,7 +351,7 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">56</obs:hasID>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_19_a2db2544-91a3-46b6-bd89-5a65ed66025c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_19_a2db2544-91a3-46b6-bd89-5a65ed66025c">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.480568333333334</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01398</obs:hasLatitude>
@@ -363,9 +363,9 @@
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90856</obs:hasArea>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289275344</obs:hasDate>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_40_1539579c-86c1-41d2-9dfa-54903ac0961e">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_40_1539579c-86c1-41d2-9dfa-54903ac0961e">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02667</obs:hasLatitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.504665</obs:hasLongitude>
@@ -373,13 +373,13 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</obs:hasDirection>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289486552</obs:hasDate>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</obs:hasID>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDateTime>2013-04-07T02:04:46</obs:hasDateTime>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90915</obs:hasArea>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_68_1a4d662e-bf9e-4cd4-b8d7-354339f0fecc">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_68_1a4d662e-bf9e-4cd4-b8d7-354339f0fecc">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91287</obs:hasArea>
@@ -389,15 +389,15 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">68</obs:hasID>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">124.53398024844124</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03804666666666</obs:hasLatitude>
     <obs:hasDateTime>2013-04-07T02:11:03</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_31_180b4fa6-7b3e-462a-8570-90068ae0cd78">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_31_180b4fa6-7b3e-462a-8570-90068ae0cd78">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91670</obs:hasArea>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.07510467750938</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.496303333333337</obs:hasLongitude>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</obs:hasID>
@@ -407,10 +407,10 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</obs:hasDirection>
     <obs:hasDateTime>2013-04-07T02:03:16</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_18_fd74c688-3ab6-4038-8cef-03e1ffecea78">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_18_fd74c688-3ab6-4038-8cef-03e1ffecea78">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDateTime>2013-04-07T02:01:10</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</obs:hasID>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90856</obs:hasArea>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.61424009003501</obs:hasDistance>
@@ -421,9 +421,9 @@
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01379</obs:hasLatitude>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289270690</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_67_03e88cdf-7aab-4c58-9757-dfef32ab44fe">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_67_03e88cdf-7aab-4c58-9757-dfef32ab44fe">
     <obs:hasDateTime>2013-04-07T02:10:51</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91287</obs:hasArea>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">44</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03714166666667</obs:hasLatitude>
@@ -435,7 +435,7 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.574785</obs:hasLongitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_64_67d3b26d-ec8e-432a-b6c6-1a8f093d3ec9">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_64_67d3b26d-ec8e-432a-b6c6-1a8f093d3ec9">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.555018333333336</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03137666666666</obs:hasLatitude>
@@ -444,12 +444,12 @@
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90358</obs:hasArea>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">48</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">78.27482963491208</obs:hasDistance>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289749110</obs:hasDate>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_2_94d5b7de-a05e-460d-94c8-8426840533d7">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_2_94d5b7de-a05e-460d-94c8-8426840533d7">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.617208396406403</obs:hasAcceleration>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.44036905010987</obs:hasDistance>
     <obs:hasDateTime>2013-04-07T02:00:02</obs:hasDateTime>
@@ -461,23 +461,23 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">246</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01412166666667</obs:hasLatitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90856</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_11_02d861bb-a325-4a48-8516-b14dae716779">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_11_02d861bb-a325-4a48-8516-b14dae716779">
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.976513467084347</obs:hasDistance>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.9272870983607954</obs:hasAcceleration>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289241262</obs:hasDate>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92067</obs:hasArea>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.475894999999998</obs:hasLongitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.0</obs:hasVelocity>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</obs:hasID>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</obs:hasDirection>
     <obs:hasDateTime>2013-04-07T02:00:41</obs:hasDateTime>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01174999999999</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_23_44bc5542-c566-4600-bc60-a72ec493b7bb">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_23_44bc5542-c566-4600-bc60-a72ec493b7bb">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01312</obs:hasLatitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</obs:hasDirection>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.48598666666667</obs:hasLongitude>
@@ -488,14 +488,14 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</obs:hasVelocity>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.10580906589751415</obs:hasAcceleration>
     <obs:hasDateTime>2013-04-07T02:01:48</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289308966</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_42_c0a19fc1-ad10-4a86-b2d3-01f4b675bf29">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_42_c0a19fc1-ad10-4a86-b2d3-01f4b675bf29">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.508159999999997</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.99135490314286</obs:hasDistance>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289500799</obs:hasDate>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</obs:hasID>
@@ -505,13 +505,13 @@
     <obs:hasDateTime>2013-04-07T02:05:00</obs:hasDateTime>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_52_7dd9ee31-82f0-4c28-b237-de1086f85478">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_52_7dd9ee31-82f0-4c28-b237-de1086f85478">
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.53518166666667</obs:hasLongitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90914</obs:hasArea>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02701166666667</obs:hasLatitude>
     <obs:hasDateTime>2013-04-07T02:07:07</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289627641</obs:hasDate>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
@@ -519,8 +519,8 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">120.24521480076837</obs:hasDistance>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_27_178e8f80-a279-4347-9f72-9ddf04c72c74">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_27_178e8f80-a279-4347-9f72-9ddf04c72c74">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</obs:hasDirection>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
@@ -533,7 +533,7 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.491128333333336</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">49.22704164424586</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_45_27d3950b-8dcb-4c25-953d-9a0362ae9a64">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_45_27d3950b-8dcb-4c25-953d-9a0362ae9a64">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02903333333333</obs:hasLatitude>
     <obs:hasDateTime>2013-04-07T02:06:15</obs:hasDateTime>
@@ -542,12 +542,12 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</obs:hasID>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">662.8789457169228</obs:hasDistance>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.524958333333334</obs:hasLongitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91730</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_25_aa6eee47-9539-4dca-8f1a-b3cf45c2caf9">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_25_aa6eee47-9539-4dca-8f1a-b3cf45c2caf9">
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289335542</obs:hasDate>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
@@ -558,11 +558,11 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.489373333333333</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.86475281777983</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</obs:hasID>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_54_2a80d775-3a91-40f9-a678-ab8abc45d3db">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_54_2a80d775-3a91-40f9-a678-ab8abc45d3db">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.542056666666667</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.31988531716812</obs:hasDistance>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -575,12 +575,12 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">122</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02526833333333</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_47_ee63ef07-8f77-4a79-b496-69352e19a9ce">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_47_ee63ef07-8f77-4a79-b496-69352e19a9ce">
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">59</obs:hasDirection>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.57121296472272</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92005</obs:hasArea>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02949333333332</obs:hasLatitude>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.52702</obs:hasLongitude>
@@ -589,7 +589,7 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:06:25</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_63_30a3732b-42d4-4373-849d-d5949c44ca77">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_63_30a3732b-42d4-4373-849d-d5949c44ca77">
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">207.65681033077848</obs:hasDistance>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.06242493536481726</obs:hasAcceleration>
@@ -599,13 +599,13 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.553773333333332</obs:hasLongitude>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03090833333334</obs:hasLatitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90358</obs:hasArea>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_4_3b90357f-5664-42ac-8529-2dc0f12d9bd9">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_4_3b90357f-5664-42ac-8529-2dc0f12d9bd9">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.013845</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDateTime>2013-04-07T02:00:09</obs:hasDateTime>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">244</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.2294989775920344</obs:hasAcceleration>
@@ -617,10 +617,10 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.478820000000002</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.055854083025107</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_1_8eddd0ef-6bbf-40e9-89f7-486a905b2216">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_1_8eddd0ef-6bbf-40e9-89f7-486a905b2216">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91677</obs:hasArea>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.0142</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.480785</obs:hasLongitude>
@@ -631,7 +631,7 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</obs:hasID>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_35_594d8f94-3356-4b3b-8d02-cb812b396d81">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_35_594d8f94-3356-4b3b-8d02-cb812b396d81">
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.493353333333335</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -643,11 +643,11 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">348</obs:hasDirection>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">98.81674663059069</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_21_fe237807-5846-4a41-98d0-224e72c05981">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_21_fe237807-5846-4a41-98d0-224e72c05981">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91677</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01410666666668</obs:hasLatitude>
     <obs:hasDateTime>2013-04-07T02:01:21</obs:hasDateTime>
@@ -659,9 +659,9 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</obs:hasID>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_48_cc814f7a-26f7-47a8-98b8-519ccd26bf45">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_48_cc814f7a-26f7-47a8-98b8-519ccd26bf45">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.529071666666663</obs:hasLongitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDateTime>2013-04-07T02:06:35</obs:hasDateTime>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289595555</obs:hasDate>
@@ -673,13 +673,13 @@
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92005</obs:hasArea>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02889166666667</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_74_4c249b30-21a0-4d17-82aa-7fe6794e5a85">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_74_4c249b30-21a0-4d17-82aa-7fe6794e5a85">
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.72795058722977</obs:hasDistance>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.59189333333334</obs:hasLongitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.04450666666666</obs:hasLatitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289963770</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:12:43</obs:hasDateTime>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</obs:hasDirection>
@@ -687,13 +687,13 @@
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90099</obs:hasArea>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74</obs:hasID>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_55_a40729d8-fd69-48ab-9482-eb6c55de34b9">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_55_a40729d8-fd69-48ab-9482-eb6c55de34b9">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90735</obs:hasArea>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.543425000000003</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">76.58801828317505</obs:hasDistance>
     <obs:hasDateTime>2013-04-07T02:07:47</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">55</obs:hasID>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02489333333332</obs:hasLatitude>
@@ -701,7 +701,7 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289667653</obs:hasDate>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</obs:hasDirection>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_10_7281eb65-6912-47b6-a06a-98cd8e1ef5a5">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_10_7281eb65-6912-47b6-a06a-98cd8e1ef5a5">
     <obs:hasDateTime>2013-04-07T02:00:39</obs:hasDateTime>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</obs:hasID>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -709,18 +709,18 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.475591666666666</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">212</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92067</obs:hasArea>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.20824471231</obs:hasDistance>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289239465</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_30_8ec0f24f-0e1a-4856-bd50-1058dd37090e">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_30_8ec0f24f-0e1a-4856-bd50-1058dd37090e">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289393088</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:03:13</obs:hasDateTime>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02063666666666</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91670</obs:hasArea>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</obs:hasDirection>
@@ -729,9 +729,9 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">170.509213143923</obs:hasDistance>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</obs:hasID>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_29_c081933a-f88d-49c1-aeb5-cbc176b4e9df">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_29_c081933a-f88d-49c1-aeb5-cbc176b4e9df">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.494491666666665</obs:hasLongitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</obs:hasDirection>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
@@ -743,13 +743,13 @@
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01924666666667</obs:hasLatitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">49.21980927320947</obs:hasDistance>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_53_1a375637-9050-469f-8eaf-4da7a1b2ef0a">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_53_1a375637-9050-469f-8eaf-4da7a1b2ef0a">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91552</obs:hasArea>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.540093333333335</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">53</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:07:31</obs:hasDateTime>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.19127582048503</obs:hasDistance>
@@ -757,11 +757,11 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289651778</obs:hasDate>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</obs:hasDirection>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_28_37c103a0-a369-4d58-baa4-9b29e87f01bc">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_28_37c103a0-a369-4d58-baa4-9b29e87f01bc">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.494003333333332</obs:hasLongitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.018855</obs:hasLatitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">281.20082052043216</obs:hasDistance>
@@ -771,11 +771,11 @@
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289375019</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:02:55</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_60_cb2faac5-a5d9-4c05-9e35-d6ee5524e34c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_60_cb2faac5-a5d9-4c05-9e35-d6ee5524e34c">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289708842</obs:hasDate>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91554</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02812999999999</obs:hasLatitude>
@@ -785,8 +785,8 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</obs:hasID>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.549303333333334</obs:hasLongitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_12_2b3f1b6c-dcdc-4e21-a41d-de8e2c9af880">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_12_2b3f1b6c-dcdc-4e21-a41d-de8e2c9af880">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01222333333334</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</obs:hasID>
@@ -799,8 +799,8 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.23856320232861639</obs:hasAcceleration>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_34_2e8cc0e5-a70e-46dc-8ff0-ea8a348aede3">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_34_2e8cc0e5-a70e-46dc-8ff0-ea8a348aede3">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</obs:hasID>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02487500000001</obs:hasLatitude>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289430138</obs:hasDate>
@@ -813,13 +813,13 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.494183333333332</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_69_6f843077-c3ec-42e5-bba0-231692676646">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_69_6f843077-c3ec-42e5-bba0-231692676646">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90486</obs:hasArea>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasDateTime>2013-04-07T02:11:36</obs:hasDateTime>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.04104166666666</obs:hasLatitude>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">375.17060477493123</obs:hasDistance>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.580030000000004</obs:hasLongitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</obs:hasDirection>
@@ -827,23 +827,23 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</obs:hasID>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289896883</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_72_cfca1443-227d-46d4-ad1d-f62a536258c8">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_72_cfca1443-227d-46d4-ad1d-f62a536258c8">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.584998333333335</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">111.62921707501866</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91285</obs:hasArea>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289934121</obs:hasDate>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.044085</obs:hasLatitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">72</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:12:14</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_65_b0f44b28-11f2-47b9-87eb-1ee464e25f5d">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_65_b0f44b28-11f2-47b9-87eb-1ee464e25f5d">
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</obs:hasID>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05536239932278556</obs:hasAcceleration>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03226666666666</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">43.0</obs:hasVelocity>
@@ -855,7 +855,7 @@
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91289</obs:hasArea>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289764162</obs:hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_61_88f6f61d-5552-4bca-a0dd-b80353a86606">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_61_88f6f61d-5552-4bca-a0dd-b80353a86606">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.550138333333333</obs:hasLongitude>
     <obs:hasDateTime>2013-04-07T02:08:36</obs:hasDateTime>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.15410828163235626</obs:hasAcceleration>
@@ -867,9 +867,9 @@
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.0</obs:hasVelocity>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">61</obs:hasID>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_57_a9306cb5-590c-4a82-93f7-4fbdcfea2b1f">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_57_a9306cb5-590c-4a82-93f7-4fbdcfea2b1f">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02576666666667</obs:hasLatitude>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</obs:hasDirection>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.06569992906620692</obs:hasAcceleration>
@@ -879,11 +879,11 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">84.55953658575687</obs:hasDistance>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91553</obs:hasArea>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289683960</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:08:03</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_9_5843b20c-5bd0-4606-a326-7ce1f1cf802c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_9_5843b20c-5bd0-4606-a326-7ce1f1cf802c">
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01215666666667</obs:hasLatitude>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.476113333333334</obs:hasLongitude>
@@ -891,13 +891,13 @@
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.83693300453623</obs:hasDistance>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</obs:hasVelocity>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</obs:hasID>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289234816</obs:hasDate>
     <obs:hasDateTime>2013-04-07T02:00:34</obs:hasDateTime>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1964851042459222</obs:hasAcceleration>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90637</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_66_6047673b-358e-4876-beac-d4009a63b13e">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_66_6047673b-358e-4876-beac-d4009a63b13e">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91289</obs:hasArea>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.98388456465769</obs:hasDistance>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.560101666666664</obs:hasLongitude>
@@ -908,11 +908,11 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</obs:hasID>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">38.0</obs:hasVelocity>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</obs:hasDirection>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.03274833333333</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_59_891cf19c-d43d-4e4b-8160-aeaf193e3c8e">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_59_891cf19c-d43d-4e4b-8160-aeaf193e3c8e">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289702248</obs:hasDate>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">59</obs:hasID>
@@ -925,21 +925,21 @@
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.548555000000004</obs:hasLongitude>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02755166666667</obs:hasLatitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_50_eae5a4ce-c354-4319-8e38-8f75658e342a">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_50_eae5a4ce-c354-4319-8e38-8f75658e342a">
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.531568333333333</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</obs:hasID>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">126</obs:hasDirection>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.027955</obs:hasLatitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289609689</obs:hasDate>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">119.9210944717385</obs:hasDistance>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90916</obs:hasArea>
     <obs:hasDateTime>2013-04-07T02:06:49</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_46_39dcd473-cee5-4d9f-96c8-c7425ab1f86d">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_46_39dcd473-cee5-4d9f-96c8-c7425ab1f86d">
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64</obs:hasDirection>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDateTime>2013-04-07T02:06:17</obs:hasDateTime>
@@ -947,13 +947,13 @@
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02911666666667</obs:hasLatitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.926354740339587</obs:hasDistance>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289577121</obs:hasDate>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.525381666666664</obs:hasLongitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91730</obs:hasArea>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</obs:hasID>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_26_d2796aee-280d-4b09-9f1c-30ca15575682">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_26_d2796aee-280d-4b09-9f1c-30ca15575682">
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289345281</obs:hasDate>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">121.74266603342167</obs:hasDistance>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -961,17 +961,17 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</obs:hasID>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01624166666667</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</obs:hasDirection>
     <obs:hasDateTime>2013-04-07T02:02:25</obs:hasDateTime>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.28520997078123805</obs:hasAcceleration>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92417</obs:hasArea>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_62_7fad8b72-5899-460e-8524-92b063b9212c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_62_7fad8b72-5899-460e-8524-92b063b9212c">
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02945166666667</obs:hasLatitude>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91288</obs:hasArea>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.27045951890960007</obs:hasAcceleration>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289724267</obs:hasDate>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.0</obs:hasVelocity>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
@@ -981,8 +981,8 @@
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62</obs:hasID>
     <obs:hasDateTime>2013-04-07T02:08:44</obs:hasDateTime>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_41_c2ec0f88-8e40-4aed-b4ed-38efca9f7a8b">
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_41_c2ec0f88-8e40-4aed-b4ed-38efca9f7a8b">
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02673166666666</obs:hasLatitude>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.5480316783873485</obs:hasAcceleration>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.35805682692775</obs:hasDistance>
@@ -995,12 +995,12 @@
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">83</obs:hasDirection>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_51_22bb61e2-9a1f-42f2-924d-4a1d6576f348">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_51_22bb61e2-9a1f-42f2-924d-4a1d6576f348">
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90914</obs:hasArea>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.02756666666667</obs:hasLatitude>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289616819</obs:hasDate>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</obs:hasDirection>
     <obs:hasDateTime>2013-04-07T02:06:56</obs:hasDateTime>
@@ -1009,12 +1009,12 @@
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.53298333333333</obs:hasLongitude>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_17_f5dfb33b-ec45-4b6d-8dbf-c798e0e6fb5c">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_17_f5dfb33b-ec45-4b6d-8dbf-c798e0e6fb5c">
     <obs:hasDateTime>2013-04-07T02:01:08</obs:hasDateTime>
     <obs:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1365289268385</obs:hasDate>
     <obs:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.47906833333333</obs:hasLongitude>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.17263238645013</obs:hasDistance>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</obs:hasAcceleration>
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90866</obs:hasArea>
@@ -1023,12 +1023,12 @@
     <obs:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.01369333333334</obs:hasLatitude>
     <obs:hasVelocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</obs:hasVelocity>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost/SensorSchema/ontology#Observation_551670016_8_34707383-eeb4-48de-8fd4-07c368aecadc">
+  <rdf:Description rdf:about="http://localhost/Schema/ontology#Observation_551670016_8_34707383-eeb4-48de-8fd4-07c368aecadc">
     <obs:hasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90637</obs:hasArea>
     <obs:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.75430109457443</obs:hasDistance>
     <obs:hasSender rdf:datatype="http://www.w3.org/2001/XMLSchema#int">551670016</obs:hasSender>
     <obs:hasDateTime>2013-04-07T02:00:29</obs:hasDateTime>
-    <rdf:type rdf:resource="http://localhost/SensorSchema/ontology#Observation"/>
+    <rdf:type rdf:resource="http://localhost/Schema/ontology#Observation"/>
     <obs:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</obs:hasID>
     <obs:hasAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.269775492855008</obs:hasAcceleration>
     <obs:hasDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#int">208</obs:hasDirection>

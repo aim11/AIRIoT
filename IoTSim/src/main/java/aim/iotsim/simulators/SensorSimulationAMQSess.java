@@ -6,11 +6,13 @@ import org.slf4j.LoggerFactory;
 
 import javax.jms.*;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 /**
@@ -60,8 +62,15 @@ public class SensorSimulationAMQSess {
 
         }
         public void run() {
+            Properties prop = new Properties();
+            try {
+                prop.load(new FileInputStream("config.properties"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            database = prop.getProperty("sqlitedb");
+            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(prop.getProperty("brokerurl"));
 
-            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost.oulu.fi:10061");
             Connection connection = null;
             Session session = null;
             Destination destination = null;

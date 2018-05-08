@@ -11,7 +11,11 @@ import org.apache.camel.Processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
+import java.util.Properties;
 
 
 /**
@@ -29,21 +33,35 @@ public class ENEventHandler implements Processor{
         private String owlFile = "./traffic.owl";
         private String ruleFile = "./traffic.rules";
 
-    private String ontologyURI = "http://localhost/SensorSchema/ontology#";
+    private String ontologyURI = "http://localhost/Schema/ontology#";
     static long tt = 0;
+    private String prefix ="obs";
+    private String predictClasses;
 
 
     public void process(Exchange exchange) throws Exception {
             try {
 
-                //long reasoningLatency = 0;
+                Properties prop = new Properties();
+                InputStream input = null;
 
+                try {
+                    input = new FileInputStream("config.properties");
+                    prop.load(input);
+                    owlFile = prop.getProperty("owlfile");
+                    ruleFile = prop.getProperty("rulesfile");
+                    ontologyURI = prop.getProperty("ontologyuri");
+                    prefix = prop.getProperty("prefix");
+                    predictClasses = prop.getProperty("predict_classnames");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 Message message = (Message) exchange.getIn();
 
                 //System.out.println("Received JMS message:" + message.getExchange().getIn().toString());
 
                 Date startd = new Date();
-                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, "http://localhost/SensorSchema/ontology#", "obs", ruleFile);
+                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, ontologyURI, prefix, ruleFile);
 
                 //long d = (new Date()).getTime();
 
@@ -58,8 +76,9 @@ public class ENEventHandler implements Processor{
 
                 //Store instances
                 //ioTReasoner.updateSesameRepository(ioTReasoner.getDataModel());
-                String[] types = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop"};
-                Model model = ioTReasoner.inferModel(types, true);
+                //String[] types = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop"};
+                String[] classes = predictClasses.split(",");
+                Model model = ioTReasoner.inferModel(classes, true);
 
                 exchange.setOut(exchange.getIn());
 

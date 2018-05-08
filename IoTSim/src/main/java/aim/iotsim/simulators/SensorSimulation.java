@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.Date;
+import java.util.Properties;
 
 /**
  * Created with IntelliJ IDEA.
@@ -56,16 +57,19 @@ public class SensorSimulation {
         public void run() {
             try {
                 //System.out.println("Thread: " + getName() + " running");
+
                 FileInputStream inputStream = null;
 
                 try {
 
+                    Properties prop = new Properties();
+                    prop.load(new FileInputStream("config.properties"));
 
                     for (int j = 0; j < 10; j++) {
                         int inc = incident+n*noIncs+j-1;
-                        inputStream = new FileInputStream("/home/amaarala/thesis/obs_data_rdf_n3/incident_"+inc+".n3");
+                        inputStream = new FileInputStream(prop.getProperty("datadir")+"/incident_"+inc+".n3");
 
-                        IoTReasoner ioTReasoner = new IoTReasoner(owlFile, "http://localhost/SensorSchema/ontology#", "obs", ruleFile);
+                        IoTReasoner ioTReasoner = new IoTReasoner(owlFile, prop.getProperty("ontology"), "obs", ruleFile);
                         ioTReasoner.setDataFormat("N3");
 
                         ioTReasoner.createDataModel(inputStream);
@@ -78,8 +82,9 @@ public class SensorSimulation {
 
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                }
-                finally {
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
                     try {
                         inputStream.close();
                     } catch (IOException e) {

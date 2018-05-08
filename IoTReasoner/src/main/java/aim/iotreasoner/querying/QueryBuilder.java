@@ -30,7 +30,7 @@ public class QueryBuilder {
     public static String insertData(String rdfData){
 
         String query = "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
@@ -44,14 +44,14 @@ public class QueryBuilder {
 
         String qry = "\n" +
                 "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/inferred> {?obs1 rdf:type obs:Jam}  } \n" +
+                "INSERT { GRAPH <http://localhost/Schema/inferred> {?obs1 rdf:type obs:Jam}  } \n" +
                 "WHERE\n" +
-                "  {  GRAPH <http://localhost/SensorSchema/temp> {" +
+                "  {  GRAPH <http://localhost/Schema/temp> {" +
                 "   ?obs1 rdf:type obs:Observation .\n" +
                 "    ?obs1 obs:hasVelocity ?v3 .\n" +
                 "    ?obs1 obs:hasSender ?snd1 .\n" +
@@ -92,14 +92,14 @@ public class QueryBuilder {
 
         String qry = "\n" +
                 "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/ontology#> {?obs1 rdf:type obs:Jam}  } \n" +
+                "INSERT { GRAPH <http://localhost/Schema/ontology#> {?obs1 rdf:type obs:Jam}  } \n" +
                 "WHERE\n" +
-                "  {  GRAPH <http://localhost/SensorSchema/"+resourceUri+"> {" +
+                "  {  GRAPH <http://localhost/Schema/"+resourceUri+"> {" +
                 "   ?obs1 rdf:type obs:Observation .\n" +
                 "    ?obs1 obs:hasVelocity ?v3 .\n" +
                 "    ?obs1 obs:hasSender ?snd1 .\n" +
@@ -137,15 +137,15 @@ public class QueryBuilder {
 
     public static String inferLongStop(String s){
         String query = "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/inferred> {?obs1 rdf:type obs:LongStop }}  \n" +
+                "INSERT { GRAPH <http://localhost/Schema/inferred> {?obs1 rdf:type obs:LongStop }}  \n" +
                 "WHERE\n" +
                 "  { \n" +
-                "    GRAPH <http://localhost/SensorSchema/temp> {" +
+                "    GRAPH <http://localhost/Schema/temp> {" +
                 "   ?obs1 rdf:type obs:Observation .\n" +
                 "    ?obs1 obs:hasVelocity ?v3 .\n" +
                 "    ?obs1 obs:hasSender ?snd1 .\n" +
@@ -183,12 +183,12 @@ public class QueryBuilder {
 
     public static String inferLongStop2(String s){
         String query = "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/ontology#> {?obs1 rdf:type obs:LongStop }}  \n" +
+                "INSERT { GRAPH <http://localhost/Schema/ontology#> {?obs1 rdf:type obs:LongStop }}  \n" +
                 "WHERE\n" +
                 "  { \n" +
                 "    GRAPH <"+s+"> {" +
@@ -230,15 +230,15 @@ public class QueryBuilder {
     public static String inferHighAvgSpeed(String ruri){
 
         String query = "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/inferred> { ?obs1 rdf:type obs:HighAvgSpeed }}  \n" +
+                "INSERT { GRAPH <http://localhost/Schema/inferred> { ?obs1 rdf:type obs:HighAvgSpeed }}  \n" +
                 "WHERE\n" +
                 "  { \n" +
-                "   GRAPH <http://localhost/SensorSchema/temp> {" +
+                "   GRAPH <http://localhost/Schema/temp> {" +
                 "   ?obs1 rdf:type obs:Observation .\n" +
                 "    ?obs1 obs:hasVelocity ?v3 .\n" +
                 "    ?obs1 obs:hasSender ?snd1 .\n" +
@@ -276,12 +276,12 @@ public class QueryBuilder {
     public static String inferHighAvgSpeed2(String ruri){
 
         String query = "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX  obs:  <http://localhost/SensorSchema/ontology#>\n" +
+                "PREFIX  obs:  <http://localhost/Schema/ontology#>\n" +
                 "PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX  owl:  <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "\n" +
-                "INSERT { GRAPH <http://localhost/SensorSchema/ontology#> { ?obs1 rdf:type obs:HighAvgSpeed }}  \n" +
+                "INSERT { GRAPH <http://localhost/Schema/ontology#> { ?obs1 rdf:type obs:HighAvgSpeed }}  \n" +
                 "WHERE\n" +
                 "  { \n" +
                 "   GRAPH <"+ruri+"> {" +

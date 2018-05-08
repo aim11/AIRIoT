@@ -50,7 +50,7 @@ public class Reasoning extends Activity {
     private Location lastKnownLocation = null;
     TelephonyManager tm;
     public static TextView textview;
-    String ontologyURI =  "http://localhost/SensorSchema/ontology#";
+    String ontologyURI =  "http://localhost/Schema/ontology#";
 
     private int idcount = 0;
 
@@ -203,7 +203,7 @@ public class Reasoning extends Activity {
                 lastDate = date;
                 lastKnownLocation = location;
 
-                //"<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:obs='http://localhost/SensorSchema/ontology#' > <rdf:Description rdf:about='http://localhost/SensorSchema/ontology#Observation_63796070_1_f4cfe609-ec66-46fe-8a81-dc2fd9ed64fd'> <obs:hasArea rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>90066</obs:hasArea> <obs:hasVelocity rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>2.0</obs:hasVelocity> <obs:hasLatitude rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>64.97802166666666</obs:hasLatitude> <obs:hasDateTime>2013-04-05T13:00:00</obs:hasDateTime> <obs:hasID rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>1</obs:hasID> <obs:hasSender rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>63796070</obs:hasSender> <rdf:type rdf:resource='http://localhost/SensorSchema/ontology#Observation'/> <obs:hasDirection rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>195</obs:hasDirection> <obs:hasDate rdf:datatype='http://www.w3.org/2001/XMLSchema#long'>1365156000000</obs:hasDate> <obs:hasDistance rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>0.0</obs:hasDistance> <obs:hasAcceleration rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>0.0</obs:hasAcceleration> <obs:hasLongitude rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>25.56193166666667</obs:hasLongitude> </rdf:Description> </rdf:RDF>";
+                //"<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:obs='http://localhost/Schema/ontology#' > <rdf:Description rdf:about='http://localhost/Schema/ontology#Observation_63796070_1_f4cfe609-ec66-46fe-8a81-dc2fd9ed64fd'> <obs:hasArea rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>90066</obs:hasArea> <obs:hasVelocity rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>2.0</obs:hasVelocity> <obs:hasLatitude rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>64.97802166666666</obs:hasLatitude> <obs:hasDateTime>2013-04-05T13:00:00</obs:hasDateTime> <obs:hasID rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>1</obs:hasID> <obs:hasSender rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>63796070</obs:hasSender> <rdf:type rdf:resource='http://localhost/Schema/ontology#Observation'/> <obs:hasDirection rdf:datatype='http://www.w3.org/2001/XMLSchema#int'>195</obs:hasDirection> <obs:hasDate rdf:datatype='http://www.w3.org/2001/XMLSchema#long'>1365156000000</obs:hasDate> <obs:hasDistance rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>0.0</obs:hasDistance> <obs:hasAcceleration rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>0.0</obs:hasAcceleration> <obs:hasLongitude rdf:datatype='http://www.w3.org/2001/XMLSchema#double'>25.56193166666667</obs:hasLongitude> </rdf:Description> </rdf:RDF>";
 
             }
 

@@ -28,18 +28,8 @@ import org.openrdf.rio.RDFFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
-import java.util.Date;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -51,7 +41,7 @@ import java.io.UnsupportedEncodingException;
 public class IoTReasoner {
 
     private String ontology = "./traffic.owl";
-    private String graphURI = "http://localhost/SensorSchema/ontology#";
+    private String graphURI = "http://localhost/Schema/ontology#";
     private String prefix = "obs";
     private String rulesFile = "./traffic.rules";
 
@@ -77,6 +67,7 @@ public class IoTReasoner {
 
     private Model collectedInfModel;
     private List rules = new ArrayList<Rule>();
+    private String predictClasses;
 
     public Model getDeductionsModel() {
         return deductionsModel;
@@ -85,13 +76,28 @@ public class IoTReasoner {
     private Model deductionsModel;
 
     public IoTReasoner() {
+        this.getProperties();
+        this.setRulesFile(rulesFile);
+        this.setPrefix(prefix);
+        this.setGraphURI(graphURI);
+        this.setOntology(ontology);
         /*if(iotreasoner == null){
             iotreasoner = this;
         }*/
+        schema = ModelFactory.createDefaultModel();
+
+        // load data into model
+        //FileManager.get().readModel( this.dataModel, "observations.rdf" );
+        FileManager.get().readModel( schema, ontology );
+
+        PrintUtil.registerPrefix(prefix, graphURI);
+
+        this.initializeGenericReasoner();
 
     }
 
     public IoTReasoner(String ontology, String graphURI, String prefix, String rulesFile) {
+        this.getProperties();
         this.setRulesFile(rulesFile);
         this.setPrefix(prefix);
         this.setGraphURI(graphURI);
@@ -110,6 +116,7 @@ public class IoTReasoner {
     }
 
     public IoTReasoner(String rulesFile) {
+        this.getProperties();
         this.setRulesFile(rulesFile);
 
         schema = ModelFactory.createDefaultModel();
@@ -130,7 +137,7 @@ public class IoTReasoner {
 
 
     public IoTReasoner(List<Rule> rl) {
-
+        this.getProperties();
 
         this.rules = rl;
 
@@ -297,7 +304,7 @@ public class IoTReasoner {
         }     */
         // creates a new, empty in-memory model
 
-        //Resource ENTITY_TYPE = rulesmodel.getResource("http://localhost/SensorSchema/ontology#Jam");
+        //Resource ENTITY_TYPE = rulesmodel.getResource("http://localhost/Schema/ontology#Jam");
         /*StmtIterator it = rulesmodel.getDeductionsModel().listStatements(null, RDF.type, ENTITY_TYPE);
 
         while (it.hasNext()) {
@@ -485,15 +492,17 @@ public class IoTReasoner {
         return infModel;
     }
 
-    public Model inferModel(String[] c, boolean store){
+    public Model inferModel(String[] classes, boolean store){
 
-        String[] classes = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop", "HighAcceleration", "HighDeAcceleration", "VeryLongStop"};
+       // String[] classes = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop", "HighAcceleration", "HighDeAcceleration", "VeryLongStop"};
         //String[] classes = {"RightTurn", "LeftTurn", "UTurn", "Jam",  "LongStop"};
 
 
         //Inference
         InfModel infModel = inferFromRules();
 
+        if(classes == null)
+            classes = this.predictClasses.split(",");
         List<String> interestingEvents = Arrays.asList(classes);
 
         OntModel om = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF, infModel);
@@ -588,7 +597,7 @@ public class IoTReasoner {
 
         //Deductions model not created from backward rules
         //to get only deducted triples strictly from the model,
-        rulesmodel.getDeductionsModel().setNsPrefix("obs", "http://localhost/SensorSchema/ontology#");
+        rulesmodel.getDeductionsModel().setNsPrefix("obs", "http://localhost/Schema/ontology#");
         this.deductionsModel = rulesmodel.getDeductionsModel();
         //updateSesameRepository(rulesmodel.getDeductionsModel());
 
@@ -612,7 +621,7 @@ public class IoTReasoner {
 
         //Deductions model not created from backward rules
         //to get only deducted triples strictly from the model,
-        infModel.getDeductionsModel().setNsPrefix("obs", "http://localhost/SensorSchema/ontology#");
+        infModel.getDeductionsModel().setNsPrefix("obs", "http://localhost/Schema/ontology#");
 
         //updateSesameRepository(rulesmodel.getDeductionsModel());
 
@@ -753,5 +762,21 @@ public class IoTReasoner {
 
     public void setDataModel(Model dataModel) {
         this.dataModel = dataModel;
+    }
+
+    public void getProperties() {
+        Properties prop = new Properties();
+        InputStream input = null;
+
+        try {
+            input = new FileInputStream("config.properties");
+            prop.load(input);
+            ontology = prop.getProperty("owlfile");
+            rulesFile = prop.getProperty("rulesfile");
+            graphURI = prop.getProperty("ontologyuri");
+            predictClasses = prop.getProperty("predict_classnames");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

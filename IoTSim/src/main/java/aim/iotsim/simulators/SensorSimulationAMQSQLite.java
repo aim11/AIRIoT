@@ -6,11 +6,13 @@ import org.slf4j.LoggerFactory;
 
 import javax.jms.*;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 /**
@@ -29,7 +31,7 @@ public class SensorSimulationAMQSQLite {
     static int incident = 1;
     static int noIncs = 1000;
     static int noThreads = 100;
-    private static String database = "jdbc:sqlite:../../../observations_en.db";
+    private static String database = "jdbc:sqlite:observations_en.db";
 
 
     private static java.sql.Connection c;
@@ -59,7 +61,14 @@ public class SensorSimulationAMQSQLite {
         }
         public void run() {
 
-            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:10061");
+            Properties prop = new Properties();
+            try {
+                prop.load(new FileInputStream("config.properties"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            database = prop.getProperty("sqlitedb");
+            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(prop.getProperty("brokerurl"));
             Connection connection;
             Session session = null;
             Destination destination = null;

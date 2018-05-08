@@ -6,7 +6,11 @@ import org.apache.activemq.command.ActiveMQBytesMessage;
 
 import javax.jms.Message;
 import javax.jms.MessageListener;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.util.Properties;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,8 +21,9 @@ import java.io.UnsupportedEncodingException;
  */
 public class EventListener implements MessageListener {
 
-    private String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl";
-    private String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules";
+    private String owlFile = "./traffic.owl";
+    private String ruleFile = "./traffic.rules";
+    private String ontologyURI;
 
 
     @Override
@@ -26,7 +31,19 @@ public class EventListener implements MessageListener {
         //To change body of implemented methods use File | Settings | File Templates.
        System.out.println("Received JMS message:"+message.toString());
 
-        IoTReasoner ioTReasoner = new IoTReasoner(owlFile, "http://localhost/SensorSchema/ontology#", "obs", ruleFile);
+        Properties prop = new Properties();
+        InputStream input = null;
+
+        try {
+            input = new FileInputStream("config.properties");
+            prop.load(input);
+            owlFile = prop.getProperty("owlfile");
+            ruleFile = prop.getProperty("rulesfile");
+            ontologyURI = prop.getProperty("ontologyuri");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        IoTReasoner ioTReasoner = new IoTReasoner(owlFile, ontologyURI, "obs", ruleFile);
 
         //String[] splitted = message.getBody().toString().split("#&&##");
         ActiveMQBytesMessage bytesmsg = (ActiveMQBytesMessage) message;
@@ -40,7 +57,7 @@ public class EventListener implements MessageListener {
 
         ioTReasoner.setDataFormat("RDF/XML");
         String msg = null;
-        msg = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:obs=\"http://localhost/SensorSchema/ontology#\">"+str+"</rdf:RDF>";
+        msg = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:obs=\"http://localhost/Schema/ontology#\">"+str+"</rdf:RDF>";
         ioTReasoner.createDataModel(msg);
 
         //Store instances

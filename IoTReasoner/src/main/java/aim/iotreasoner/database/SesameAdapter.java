@@ -29,7 +29,7 @@ import java.util.UUID;
  */
 public class SesameAdapter {
 
-    private static String obsURI = "http://localhost/SensorSchema/ontology#";
+    private static String obsURI = "http://localhost/Schema/ontology#";
 
     //private static SesameAdapter adapter;
     private RepositoryConnection con = null;
@@ -68,7 +68,7 @@ public class SesameAdapter {
             URL urL = null;
 
             try {
-                urL = new URL("http://localhost/SensorSchema/ontology#");
+                urL = new URL("http://localhost/Schema/ontology#");
             } catch (MalformedURLException e) {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
@@ -135,7 +135,7 @@ public class SesameAdapter {
             //System.out.println("------------------ ADDING STATEMENTS -------------------- ");
             //connection.begin();
 
-            Update updateQ = connection.prepareUpdate(QueryLanguage.SPARQL, "CREATE GRAPH <http://localhost/SensorSchema/"+uuid.toString()+">");
+            Update updateQ = connection.prepareUpdate(QueryLanguage.SPARQL, "CREATE GRAPH <http://localhost/Schema/"+uuid.toString()+">");
             updateQ.execute();
 
         } catch (RepositoryException e) {
@@ -173,8 +173,8 @@ public class SesameAdapter {
             StringReader reader = new StringReader(writer.toString());
 
 
-            URI context = factory.createURI("http://localhost/SensorSchema/"+uuid.toString());
-            connection.add(reader, "http://localhost/SensorSchema/"+uuid.toString(), dataFormat, (Resource) context);
+            URI context = factory.createURI("http://localhost/Schema/"+uuid.toString());
+            connection.add(reader, "http://localhost/Schema/"+uuid.toString(), dataFormat, (Resource) context);
 
             connection.commit();
 
@@ -189,7 +189,7 @@ public class SesameAdapter {
             //long c = ((new Date()).getTime())-time;
             // Whatever happens, we want to close the connection when we are done.
 
-            this.updateNDeleteQuery(connection, QueryBuilder.inferJam2("http://localhost/SensorSchema/" + uuid.toString()));
+            this.updateNDeleteQuery(connection, QueryBuilder.inferJam2("http://localhost/Schema/" + uuid.toString()));
         }
     }
 
@@ -204,10 +204,10 @@ public class SesameAdapter {
             Update jamQ = connection.prepareUpdate(QueryLanguage.SPARQL, query);
             jamQ.execute();
             connection.commit();
-            Update longstopQ = connection.prepareUpdate(QueryLanguage.SPARQL, QueryBuilder.inferLongStop2("http://localhost/SensorSchema/" + uuid.toString()));
+            Update longstopQ = connection.prepareUpdate(QueryLanguage.SPARQL, QueryBuilder.inferLongStop2("http://localhost/Schema/" + uuid.toString()));
             longstopQ.execute();
             connection.commit();
-            Update highavgQ = connection.prepareUpdate(QueryLanguage.SPARQL, QueryBuilder.inferHighAvgSpeed2("http://localhost/SensorSchema/" + uuid.toString()));
+            Update highavgQ = connection.prepareUpdate(QueryLanguage.SPARQL, QueryBuilder.inferHighAvgSpeed2("http://localhost/Schema/" + uuid.toString()));
             highavgQ.execute();
             connection.commit();
 
@@ -224,7 +224,7 @@ public class SesameAdapter {
             //TODO: do not drop, include in infer qury?
 
             //LOGGER.info("sa " + (new Date()).getTim
-            this.updateQuery(connection, "DROP GRAPH <http://localhost/SensorSchema/"+uuid.toString()+">");
+            this.updateQuery(connection, "DROP GRAPH <http://localhost/Schema/"+uuid.toString()+">");
         }
     }
 

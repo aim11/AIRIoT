@@ -10,7 +10,11 @@ import org.apache.camel.Processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
+import java.util.Properties;
 
 
 /**
@@ -30,10 +34,13 @@ public class RDFXMLEventHandler implements Processor{
     private int count = 0;
 
     private String owlFile = "./traffic.owl";
+
     private String ruleFile = "./traffic.rules";
+    private String ontologyURI = "http://localhost/Schema/ontology#";
+    private String predictClasses;
 
 
-        public void process(Exchange exchange) throws Exception {
+    public void process(Exchange exchange) throws Exception {
             try {
 
                 long reasoningLatency = 0;
@@ -43,20 +50,34 @@ public class RDFXMLEventHandler implements Processor{
                 Message message = (Message) exchange.getIn();
                 Date startd = new Date();
 
-                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, "http://localhost/SensorSchema/ontology#", "obs", ruleFile);
+                Properties prop = new Properties();
+                InputStream input = null;
+
+                try {
+                    input = new FileInputStream("config.properties");
+                    prop.load(input);
+                    owlFile = prop.getProperty("owlfile");
+                    ruleFile = prop.getProperty("rulesfile");
+                    ontologyURI = prop.getProperty("ontologyuri");
+                    predictClasses = prop.getProperty("predict_classnames");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+                IoTReasoner ioTReasoner = new IoTReasoner(owlFile, ontologyURI, "obs", ruleFile);
 
                 //String[] splitted = message.getBody().toString().split("#&&##");
 
                 ioTReasoner.setDataFormat("RDF/XML");
-                String msg = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:obs=\"http://localhost/SensorSchema/ontology#\">"+message.getBody().toString()+"</rdf:RDF>";
+                String msg = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:obs=\""+ontologyURI+"#\">"+message.getBody().toString()+"</rdf:RDF>";
                 System.out.println(msg);
 
                 ioTReasoner.createDataModel(msg);
 
                 //Store instances
                 //ioTReasoner.updateSesameRepository(ioTReasoner.getDataModel());
-                String[] types = {};
-                Model model = ioTReasoner.inferModel(types, false);
+                String[] classes = predictClasses.split(",");
+                Model model = ioTReasoner.inferModel(classes, false);
 
                 System.out.println("Reasoned: ");
                 model.write(System.out);

@@ -7,6 +7,8 @@ import org.apache.camel.Processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Map;
 
@@ -22,8 +24,9 @@ public class SensorPacketHandler implements Processor{
 
         private static final Logger LOGGER = LoggerFactory
         .getLogger(SensorPacketHandler.class);
+    private String predictClasses;
 
-        public void process(Exchange exchange) throws Exception {
+    public void process(Exchange exchange) throws Exception {
             try {
                 Message message = (Message) exchange.getIn();
 
@@ -39,15 +42,15 @@ public class SensorPacketHandler implements Processor{
                 Map<String, Object> headers = message.getHeaders();
                 Map<String, Object> properties = message.getExchange().getProperties();
 
-
                 IoTReasoner ioTReasoner = new IoTReasoner();
 
                 ioTReasoner.createDataModel(message.getBody().toString());
 
                 //Store instances
                 //ioTReasoner.updateSesameRepository(ioTReasoner.getDataModel());
-                String[] types = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop", "HighAcceleration", "HighDeacceleration"};
-                ioTReasoner.inferModel(types, true);
+                // String[] classes = {"RightTurn", "LeftTurn", "UTurn", "Jam", "HighAvgSpeed", "LongStop", "HighAcceleration", "HighDeacceleration"};
+
+                ioTReasoner.inferModel(null, true);
                 StringWriter str = new StringWriter();
                 ioTReasoner.getInferredModel().write(str, "RDF/XML");
 

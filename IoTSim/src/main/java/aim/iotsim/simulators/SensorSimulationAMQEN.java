@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 /**
@@ -38,13 +39,20 @@ public class SensorSimulationAMQEN{
         ackMode = Session.AUTO_ACKNOWLEDGE;
     }
 
-    static ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:10061");
+    static ActiveMQConnectionFactory connectionFactory;
     static Connection connection;
     private static Session session;
     private static Destination destination;
 
     public static void main(String[] args){
-
+        Properties prop = new Properties();
+        try {
+            prop.load(new FileInputStream("config.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        connectionFactory = new ActiveMQConnectionFactory(prop.getProperty("brokerurl"));
         try {
             connection = connectionFactory.createConnection();
             connection.start();
@@ -112,7 +120,7 @@ public class SensorSimulationAMQEN{
 
                     for (int j = 1; j <= noIncs; j++) {
                         int inc = incident+n*noIncs+j-noIncs;
-                        inputStream = new FileInputStream("/home/amaarala/thesis/obs_data_individuals_en/incident_"+inc+".en");
+                        inputStream = new FileInputStream("obs_data_en/"+inc+".en");
 
                         StringWriter strw = new StringWriter();
                         String encoding = "UTF-8";

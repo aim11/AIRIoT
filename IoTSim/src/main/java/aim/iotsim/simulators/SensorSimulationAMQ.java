@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.sql.*;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 /**
@@ -23,6 +24,7 @@ import java.util.Random;
  * To change this template use File | Settings | File Templates.
  */
 public class SensorSimulationAMQ {
+
 
 
     static long reasoningLatency = 0;
@@ -45,12 +47,20 @@ public class SensorSimulationAMQ {
         ackMode = Session.AUTO_ACKNOWLEDGE;
     }
 
-    static ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://cse-cn0004:10012");
+    static ActiveMQConnectionFactory connectionFactory; //eg. tcp://broker:10012"
     static Connection connection;
     private static Session session;
     private static Destination destination;
 
     public static void main(String[] args){
+        Properties prop = new Properties();
+        try {
+            prop.load(new FileInputStream("config.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        connectionFactory = new ActiveMQConnectionFactory(prop.getProperty("brokerurl"));
+
         System.out.println("Start params:");
 	    for (String s: args) {
             String opt = s.substring(0,2);
@@ -131,7 +141,7 @@ public class SensorSimulationAMQ {
 
                     for (int j = 1; j <= noIncs; j++) {
                         int inc = incident+n*noIncs+j-noIncs;
-                        inputStream = new FileInputStream("/home/amaarala/thesis/data/obs_data_individuals_"+format+"/incident_"+inc+"."+format);
+                        inputStream = new FileInputStream("obs_data_"+format+"/incident_"+inc+"."+format);
 
                         StringWriter strw = new StringWriter();
                         String encoding = "UTF-8";

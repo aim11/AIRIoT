@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 /**
@@ -22,9 +23,6 @@ import java.util.Random;
  */
 public class SensorSimulationAMQJSON {
 
-    private static String owlFile = "/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl";
-    private static String ruleFile = "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules";
-
     static long reasoningLatency = 0;
 
     private static final Logger LOGGER = LoggerFactory
@@ -34,20 +32,29 @@ public class SensorSimulationAMQJSON {
 
     private static final String clientQueueName;
     private static final int ackMode;
+    private static String datadir = "";
 
     static {
         clientQueueName = "json.events";
         ackMode = Session.AUTO_ACKNOWLEDGE;
     }
 
-    static ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+    static ActiveMQConnectionFactory connectionFactory;
     static Connection connection;
     private static Session session;
     private static Destination destination;
 
     public static void main(String[] args){
 
+        Properties prop = new Properties();
+        try {
+            prop.load(new FileInputStream("config.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        datadir = prop.getProperty("datadir");
 
+        connectionFactory = new ActiveMQConnectionFactory(prop.getProperty("brokerurl"));
         try {
             connection = connectionFactory.createConnection();
             connection.start();
@@ -115,7 +122,7 @@ public class SensorSimulationAMQJSON {
 
                     for (int j = 1; j <= noIncs; j++) {
                         int inc = incident+n*noIncs+j-noIncs;
-                        inputStream = new FileInputStream("/home/amaarala/thesis/obs_data_individuals_jsonld/incident_"+inc+".json");
+                        inputStream = new FileInputStream(datadir+"/incident_"+inc+".json");
 
                         StringWriter strw = new StringWriter();
                         String encoding = "UTF-8";

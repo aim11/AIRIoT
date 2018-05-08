@@ -8,9 +8,13 @@ import com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP;
 import com.hp.hpl.jena.update.*;
 import org.openrdf.repository.RepositoryConnection;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringWriter;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Created by amaarala on 12/10/13.
@@ -22,8 +26,7 @@ public class QueryEngine {
     private String prefix = "obs";
 
     private RepositoryConnection con = null;
-    private static String endpoint = "http://cse-cn0004.oulu.fi:10010/openrdf-sesame/repositories/iot";
-    private String graphURI = "http://localhost/SensorSchema/ontology#";
+    private static String endpoint = "http://sesame-server:10010/openrdf-sesame/repositories/iot";
 
     private String dataFormat = "N3";
 
@@ -72,7 +75,7 @@ public class QueryEngine {
         //new ObservationDAOWrapper(model, graphURI, "LeftTurn");
         //List<Observation> obs = ObservationDAOWrapper.queryAll();
 
-        /*IoTReasoner ioTReasoner = new IoTReasoner("/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl", "http://localhost/SensorSchema/ontology#", "obs", "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules");
+        /*IoTReasoner ioTReasoner = new IoTReasoner("/home/amaarala/thesis/dev/IoT/IoTSim/traffic.owl", "http://localhost/Schema/ontology#", "obs", "file:/home/amaarala/thesis/dev/IoT/IoTSim/traffic.rules");
 
         String[] classes = {"JamZone", "Crossing", "HotSpot", "HighPollutionZone", "UTurnZone"};
 
@@ -98,6 +101,17 @@ public class QueryEngine {
 
     public static ResultSet query(String qry){
 
+        Properties prop = new Properties();
+        InputStream input = null;
+
+        try {
+            input = new FileInputStream("config.properties");
+            prop.load(input);
+            endpoint = prop.getProperty("sesame_endpoint");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         ResultSet rs = null;
 
         try {
